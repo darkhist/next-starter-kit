@@ -1,13 +1,22 @@
-name: Integration
+name: Automated Tests and Dependency Caching
 
 on: [push]
 
 jobs:
-  cypress-run:
-    runs-on: ubuntu-16.04
+  cache:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+
+      - name: Cache Dependencies
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install Packages
+        run: yarn
 
       - name: Cypress Run
         uses: cypress-io/github-action@v2
