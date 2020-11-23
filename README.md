@@ -1,16 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Starter Kit 📦
+
+## Features
+
+- Automated a11y Tests with Cypress & GitHub Actions 🤖
+- Framer Motion Support 🎥
+- A Custom `_document.js` for SEO ⚡️
+- Global Styles & [Inter](https://rsms.me/inter/) 💅
+- Customizable 404 Page ❓
+- Customizable ESLint Config With the [Airbnb Styleguide](https://github.com/airbnb/javascript) 🛠
+- General Purpose `.gitignore` 🎉
+- Designed for Yarn 🧶
+- Prettier ✨
+- MIT LICENSE 👨‍⚖️
+- and More!
 
 ## Getting Started
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
+```
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to check things out 👀
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
