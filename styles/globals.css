@@ -1,9 +1,25 @@
+@import url('https://rsms.me/inter/inter.css');
+html {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+  font-feature-settings: 'zero';
+  background-color: #141414;
+  color: white;
 }
 
 a {
@@ -11,6 +27,72 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+  cursor: pointer;
+}
+
+/* markdown styles */
+
+/* images */
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero > img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.25rem 0;
+  }
+
+  .hero > img {
+    width: auto;
+    height: 75vh;
+    padding: 0 1rem;
+  }
+}
+
+/* links */
+article > p > a,
+article > ol > li > a {
+  text-decoration: underline;
+}
+
+/* code blocks */
+pre {
+  font-size: 1rem;
+}
+
+/* inline code snippets */
+p > code {
+  background-color: #2b2b2b;
+  color: #ffa07a;
+  margin: 0 2px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+  p > code {
+    font-size: 1.5rem;
+  }
+}
+
+/* blockquotes */
+blockquote > p {
+  border-left: 10px solid white;
+  padding: 0 0 0 1rem;
+  margin: 0 -1.25rem;
+  font-style: italic;
+}
+
+blockquote > p > a {
+  text-decoration: underline;
+  margin: 0 2px;
 }
