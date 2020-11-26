@@ -3,13 +3,15 @@
 ## Features
 
 - Automated a11y Tests with Cypress & GitHub Actions 🤖
-- Framer Motion Support 🎥
+- Yarn Support 🧶
+- Jest 🃏
+- Babel 🦕
+- Framer Motion 🎥
 - A Custom `_document.js` for SEO ⚡️
 - Global Styles & [Inter](https://rsms.me/inter/) 💅
 - Customizable 404 Page ❓
 - Customizable ESLint Config With the [Airbnb Styleguide](https://github.com/airbnb/javascript) 🛠
 - General Purpose `.gitignore` 🎉
-- Designed for Yarn 🧶
 - Prettier ✨
 - MIT LICENSE 👨‍⚖️
 - and More!
